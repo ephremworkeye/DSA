@@ -8,3 +8,8 @@ function sum(A) {
 }
 
 console.log(sum([2, 3, 4, 5, 6]));
+
+// find min
+
+
+// find max
