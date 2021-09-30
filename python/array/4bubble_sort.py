@@ -7,3 +7,5 @@ def bubble_sort(A):
     return A
 
 print(bubble_sort([5, 2, 3, 1, 9, 0, 2]))
+
+

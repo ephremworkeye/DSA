@@ -51,13 +51,16 @@
 
 def square_numbers_exclude(n):
     L = []
-    numbers = int(n**0.5)
-    for n in range(1, n+1):
-        for i in range(1, numbers + 1):
-            if i ** 2 == n:
-                break
-        else:
-            L.append(n)
+    d = {}
+    for num in range(n):
+        d[num*num] = num
+        if d[num] > n:
+            break
+    
+    for number in range(n):
+        if number not in d:
+            L.append(number)
+
     return L
 
 print(square_numbers_exclude(100))

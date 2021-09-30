@@ -92,8 +92,25 @@ class DoublyLInkedList:
             current = self.tail
             for _ in range(self.length -1, index, -1):
                 current = current.previous
-        return current       
+        return current     
+
+    def set_value(self, index, value):
+        if index < 0 index >= self.length:
+            return None
         
+        if index < self.length // 2:
+            current = self.head
+            for _ in range(index):
+                current = current.next
+            current.value = value
+        else:
+            current = self.tail
+            for _ in range(self.length-1, index, -1):
+                current = current.previous
+            current.value = value
+
+
+        -
 
 
 
