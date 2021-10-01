@@ -110,7 +110,8 @@ class DoublyLInkedList:
             current.value = value
 
 
-        -
+    def insert(self, index, value):
+        
 
 
 
