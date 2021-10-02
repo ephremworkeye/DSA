@@ -38,7 +38,7 @@ class Queue:
             print(current.value)
             current = current.next
 
-
+;
 queue = Queue()
 queue.enqueue(4)
 queue.enqueue(3)
